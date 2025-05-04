@@ -1,13 +1,38 @@
-# React + Vite
+# JSX and React Components Checkpoint
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This React project demonstrates the use of **JSX** and **modular React components** to display product information dynamically. The app is built using **create-react-app** and styled with **react-bootstrap**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It features a product card that shows:
+- Product Name
+- Price
+- Description
+- Image
 
-## Expanding the ESLint configuration
+Below the product card, a greeting is displayed — personalized if a name is provided, or a default "Hello, there!" otherwise.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# gomycode-react-product-app
+## Project Structure
+
+- `App.js`: Root component containing the card and greeting logic.
+- `product.js`: JSON object with product name, price, description, and image path.
+- `Name.js`, `Price.js`, `Description.js`, `Image.js`: Modular components displaying specific product data.
+
+## Styling
+
+The app uses Bootstrap for styling, with additional inline styles for layout and color.
+
+## Deployment
+
+This project can be deployed to GitHub Pages for live previewing.
+
+## Conclusion
+
+This project is a hands-on exercise in using JSX, reusable components, conditional rendering, and React-Bootstrap. It showcases how to build a clean and modular React UI from scratch.
+
+---
+
+### 👩‍💻 Author
+
+**Grace Wambui Mugece**
+
