@@ -1,14 +1,17 @@
+//Importing necessary libraries and components
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+
+// Importing custom components
 import Name from "./components/Name";
 import Price from "./components/price";
 import Description from "./components/Description";
 import Image from "./components/Image";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 
 function BasicExample() {
-    const firstName = "Grace";
+  const firstName = "Grace";
 
   return (
     <div
@@ -17,21 +20,20 @@ function BasicExample() {
         flexDirection: "column",
         alignItems: "center",
         marginTop: "2rem",
-        backgroundColor: "wheat"
+        backgroundColor: "wheat",
       }}
     >
+      {/* Product card layout using Bootstrap */}
       <Card
         style={{
           width: "18rem",
           backgroundColor: "pink",
-         }}
+        }}
       >
         <Card.Body>
-        <Card.Img
-          variant="top"
-          src="/serum.jpg"
-          alt="serum image"
-        />
+          <Card.Img variant="top" src="/serum.jpg" alt="serum image" />
+
+          {/* Product title and description */}
           <Card.Title>
             <strong>GlowSkin Vitamin C Serum</strong>
           </Card.Title>
@@ -45,20 +47,24 @@ function BasicExample() {
           <Button variant="primary">Buy now</Button>
         </Card.Body>
       </Card>
-          <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
-            <h4>Hello, {firstName ? firstName : "there"}!</h4>
-            {firstName && (
-              <img
-                src="/My image.jpg"
-                alt="Greeting Visual"
-                style={{ width: "30%", marginTop: "10px", borderRadius: "60px 30px"}}
-              />
-            )}
-          </div>
+
+      {/* Personalized greeting section */}
+      <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
+        <h4>Hello, {firstName ? firstName : "there"}!</h4>
+        {firstName && (
+          <img
+            src="/My image.jpg"
+            alt="Greeting Visual"
+            style={{
+              width: "30%",
+              marginTop: "10px",
+              borderRadius: "60px 30px",
+            }}
+          />
+        )}
+      </div>
     </div>
   );
 }
 
 export default BasicExample;
-
-
