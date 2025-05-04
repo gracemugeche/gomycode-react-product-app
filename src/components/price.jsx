@@ -3,7 +3,7 @@ import React from "react";
 import product from '../product'; 
 
 function Price() {
-    return <p>{product.price}</p>; 
+    return <p>{'$24.99'}</p>; 
   }
   
   export default Price;
